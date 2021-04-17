@@ -4,8 +4,14 @@
 <meta charset="utf-8">
     <title>GATE GOURMET RESTAURANTE</title>
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet">
+
      <link href="https://file.myfontastic.com/t5tNwfwUapz4yDzK3B6sfe/icons.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
 	<link rel="stylesheet" href="../css/estilos.css">
+
 </head>
 <body>
    <header class="header">
@@ -14,15 +20,19 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a  class="menu__link">Inicio</a></li>
-            <li class="menu__item"><a  class="menu__link">Menu</a></li>
-            <li class="menu__item"><a  class="menu__link">Contacto</a></li>
-            <li class="menu__item"><a  class="menu__link">Login</a></li>
             
+            <li class="menu__item"><a  class="menu__link" href="index.html">Inicio </a></li>
+            <li class="menu__item"><a  class="menu__link" href="index.html">Menu </a></li>
+            <li class="menu__item"><a  class="menu__link" href="index.html">Contacto </a></li>
+             <button id="btn-abrir-popup" class="menu__link">Login</button>
+           
+              
+
           </ul>
         </nav>
       </div>
     </header>
+    
     <div class="banner"> 
         <img src="../imagenes/banner.jpg" alt"" title="" >
          <div class="contenedor">
@@ -101,8 +111,7 @@
                 <p>Nos encontramos en la Av. Juan Jose Torrez Nro. 100</p>
                 <br>
                 <p>Zona: Central</p>   
-
-                    <iframe src="https://www.google.com/maps/place/La+Paz/@-16.5205361,-68.1941186,12z/data=!3m1!4b1!4m5!3m4!1s0x915edf0a04f5a40f:0x57dbfc76b4458ab3!8m2!3d-16.489689!4d-68.1192936" width="90%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.702652507289!2d-68.08184488570733!3d-16.541102546167874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f21309cd88f8f%3A0x546d1821ed5bc6af!2sVainilla!5e0!3m2!1ses-419!2sbo!4v1618537621928!5m2!1ses-419!2sbo" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                  </div>
             </section> 
@@ -115,6 +124,26 @@
              </div>
          <p class="copy">&copy; Todos los derechos reservados a Jhonny Canaviri Plata | 2021</p>
          </footer>
-          <script src="js/menu.js"></script>
+          
+            <div class="overlay" id="overlay">
+              <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                <h3>LOGIN</h3>
+                <h4>Ingrese su usuario y contraseña para identificarse</h4>
+                <form action="">
+                  <div class="contenedor-inputs">
+                    <input type="text" placeholder="Usuario">
+                    <input type="email" placeholder="Contraseña">
+                  </div>
+                  
+                  <li class="submit"><a  class="btn-submit" href="principal.html">Ingresar </a></li>
+                  
+                </form>
+              </div>
+            </div>
+                   
+          <script src="../js/menu.js"></script>
+          <script src="../js/menu.js"></script>
+
 </body>
 </html>
