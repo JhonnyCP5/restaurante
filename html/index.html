@@ -130,13 +130,16 @@
                 <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
                 <h3>LOGIN</h3>
                 <h4>Ingrese su usuario y contraseña para identificarse</h4>
-                <form action="">
+                
+                <form action="principal.html">
                   <div class="contenedor-inputs">
-                    <input type="text" placeholder="Usuario">
-                    <input type="email" placeholder="Contraseña">
+                    <input type="text" placeholder="Usuario" class="validate" required pattern="[a-z]{5}">
+                    
+                    <input type="password" placeholder="Contraseña" class="validate" required>
                   </div>
+                  <input type="submit" class="btn-submit" value="Ingresar">
+                  <input type="submit" class="btn-submit" value="olvide mi contraseña">
                   
-                  <li class="submit"><a  class="btn-submit" href="principal.html">Ingresar </a></li>
                   
                 </form>
               </div>
