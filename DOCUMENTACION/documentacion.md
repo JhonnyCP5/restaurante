@@ -13,6 +13,14 @@ El usuario pueda seleccionar los ingredientes para un plato que se prepara en el
 
 ## Caso de uso
 ![caso de uso del sistema](Restaurante.png)
-## Maqueta
+## Maquetación
+![caso de uso del sistema](Inicio.jpg)
+![caso de uso del sistema](Login.jpg)
+![caso de uso del sistema](frontis.jpg)
+
+## Diagrama entidad relación
+
+![entidad relacion](basedatos.png)
 ## Repositorio
 
+https://github.com/JhonnyCP5
