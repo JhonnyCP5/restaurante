@@ -31,7 +31,7 @@
             $this->contrasena = "";
             $this->fecha_registro = "";
             $this->salario = "";
-           // $conn = new Conexion();
+           
             
         }
         function setci($ci){
@@ -124,7 +124,7 @@
 
         function obtUsuario(){
            // echo "Lista usuarios..";
-            $c = new CnxPDO();
+            $c = new conexion();
             $q = "SELECT idusuario, ci, nombres, ap_paterno, ap_materno, fecha_nacimiento, telefono, email, direccion, cargo, contrasena, fecha_registro, salario  FROM usuarios;";
             //echo $q;
             $consulta = $c->getCnx()->prepare($q);

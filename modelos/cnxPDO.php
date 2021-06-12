@@ -1,6 +1,6 @@
 <?php
 
-    include_once('./parametros.php');
+    include_once('./utils/parametros.php');
     class CnxPDO {
         private $cnx;
         function CnxPDO(){
